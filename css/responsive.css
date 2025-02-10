@@ -1,0 +1,303 @@
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .title {
+    margin-bottom: 30px !important;
+  }
+
+  .title h2 {
+    font-size: 30px;
+  }
+
+  .title p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #bannerPart {
+    padding: 121px 0 85px;
+  }
+
+  .navbar .customBtn {
+    margin: 60px 70px 100px;
+  }
+
+  .navbar {
+    text-align: center;
+    background: rgba(14, 14, 14, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(80px);
+  }
+
+  .navbar-toggler {
+    margin-right: 3px;
+    transition: all linear 0.4s;
+  }
+
+  .navbar .nav-link.active {
+    margin: 30px 40px 10px 40px;
+    color: var(--secondaryColor);
+  }
+
+  .navbar .nav-link {
+    text-align: center;
+    margin: 15px 40px 15px 40px;
+  }
+
+  .navbar .nav-link:hover {
+    color: var(--secondaryColor);
+    background: white;
+    border-radius: 2px;
+    transform: scale(1.2);
+  }
+
+  #bannerPart .container h1 {
+    font-size: 34px;
+    line-height: 105%;
+  }
+
+  #bannerPart .container p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .slick-dots {
+    bottom: 33px;
+  }
+
+  /* ================================================================================================ */
+
+  #success_part {
+    margin: 60px 0 50px;
+    padding: 0 12px;
+  }
+
+  #success_part .row {
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+
+  #success_part .left h3 {
+    font-size: 18px;
+  }
+
+  #success_part .left h2 {
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  #success_part .right {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #success_part .right .child h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  #success_part .right .child {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* ===================================================================================================== */
+
+  #service_part {
+    padding: 50px 0;
+  }
+
+  #service_part .child {
+    padding: 40px 20px 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  #service_part .child p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* ===================================================================================================== */
+
+  #work_part {
+    padding: 50px 0;
+  }
+
+  #work_part .child .text h3 {
+    width: auto;
+  }
+
+  #work_part .child .text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* ===================================================================================================== */
+
+  #agenc_part {
+    padding: 50px 0 25px;
+  }
+
+  #agenc_part .main .parent .row {
+    row-gap: 30px;
+  }
+
+  #agenc_part .row .col-lg-6 .child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #agenc_part .row .col-lg-6:nth-child(odd) .child {
+    flex-direction: row-reverse;
+  }
+
+  #agenc_part .row .col-lg-6:nth-child(odd) .child .text {
+    text-align: right;
+  }
+
+  #agenc_part .child h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  #agenc_part .child p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  #agenc_part .main .team {
+    height: 250px;
+    display: block;
+    text-align: center;
+    margin: 50px auto 0;
+  }
+
+  /* ===================================================================================================== */
+
+  #review_part {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  #review_part .reviewSlider .slide {
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px 28px;
+    border-radius: 20px;
+  }
+
+  #review_part .reviewSlider .leftArrow {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+  }
+
+  #review_part .reviewSlider .rightArrow {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+  }
+
+  #review_part .reviewSlider .slide p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  #review_part .user{
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+  }
+
+  #review_part .user .text p {
+    margin: 0 0 0 5px;
+  }
+
+  /* ===================================================================================================== */
+
+  #form_part {
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  #form_part .title {
+    text-align: center;
+  }
+
+  #form_part .title h2 {
+    text-align: center;
+    margin: 0 auto !important;
+  }
+  
+  #form_part .title p {
+    text-align: center;
+    margin: 0 auto !important;
+  }
+
+  #form_part form {
+    padding: 30px;
+  }
+
+  #form_part form h3 {
+    font-size: 25px;
+    margin: 0 auto 20px;
+  }
+
+  #form_part form input {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 16px 20px;
+    margin: 10px 0 10px;
+  }
+
+  #form_part .customBtn {
+    margin: 20px auto 0;
+  }
+
+  /* ===================================================================================================== */
+  
+  footer{
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  footer .footerRight {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer p {
+    margin: 10px auto 30px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  footer .footerRight ul{
+    margin: 10px auto;
+  }
+
+  footer .footerRight ul h3 {
+    margin: 10px auto;
+  }
+
+  footer .footerRight ul li a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  footer .copy_part {
+    font-size: 14px;
+    line-height: 22;
+    padding: 20px 10px;
+  }
+}

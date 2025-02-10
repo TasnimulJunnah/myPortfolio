@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  outline: 0;
+}
+
+:root {
+  /* --primaryColor: #6a4df4; */
+  --primaryColor: #0fff50;
+  --secondaryColor: #1f51ff;
+  /* --secondaryColor: #4756df; */
+  --white: #fff;
+  --black: #000;
+  --headingColor: #151515;
+  --paraColor: #737373;
+}
+
+.customBtn {
+  padding: 15px 42px;
+  color: var(--white);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.customBtn:hover {
+  color: var(--white) !important;
+  background: #67b26f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4ca2cd,
+    #67b26f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4ca2cd,
+    #67b26f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  max-width: 1344px;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--headingColor);
+}
+
+.title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--paraColor);
+  line-height: 26px;
+  max-width: 495px;
+  margin: 20px auto 0;
+}
+
+/* =============================================================== */
+
+.glow {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--primaryColor),
+      0 0 40px var(--primaryColor), 0 0 50px var(--primaryColor),
+      0 0 60px var(--primaryColor), 0 0 70px var(--primaryColor);
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px palegreen, 0 0 40px palegreen,
+      0 0 50px palegreen, 0 0 60px palegreen, 0 0 70px palegreen,
+      0 0 80px palegreen;
+  }
+}
+
+.navbar {
+  padding: 12px 0;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  z-index: 5;
+}
+
+.navbar-toggler {
+  color: var(--primaryColor);
+  background-color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+}
+
+.navbar .navbar-nav {
+  column-gap: 60px;
+}
+
+.navbar .nav-link {
+  padding: 0 !important;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 26px;
+  color: var(--white);
+  transition: all linear 0.4s;
+}
+
+.navbar .nav-link:hover {
+  background: -webkit-linear-gradient(#4ca2cd, #67b26f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.2);
+}
+
+.navbar .nav-link.active {
+  background: -webkit-linear-gradient(#4ca2cd, #67b26f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  transform: scale(1.2);
+}
+
+/* ======================================================= */
+
+#banner_part {
+  /* padding: 190px 0 20px; */
+  background: url(../images/banners/banner01.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 1;
+}
+
+#banner_part::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -100;
+}
+
+#banner_part .container .left {
+  padding: 90px 0 20px 50px;
+  text-align: left;
+}
+
+#banner_part .container .left h2 span {
+  background: -webkit-linear-gradient(#4ca2cd, #67b26f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 0 20px;
+  font-size: 50px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+#banner_part .container .left h2 {
+  color: var(--white);
+  margin: 2px 25px 20px 0;
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+#banner_part .container .left h1 {
+  text-align: left;
+  color: var(--white);
+  margin: 0 25px 25px 2px;
+  font-size: 65px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+/* ======================================================== */
+
+#about_part {
+  padding: 100px 112px 50px;
+}
+
+#about_part h2 {
+  background: -webkit-linear-gradient(#4ca2cd, #67b26f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+#about_part p {
+  margin: 26px 0 0 99px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  max-width: 1063px;
+  text-align: center;
+}
+
+/* ========================================================================== */
+
+#skill_part {
+  padding: 50px 0 60px;
+  margin: 0 auto;
+}
+
+#skill_part .row {
+  row-gap: 24px;
+}
+
+/* ====================================================== */
+
+#projects_part {
+  padding: 150px 140px;
+  background: url(../images/projectsImages/projectsBanner.jpg) no-repeat center/cover;
+}
+
+#projects_part .row {
+  row-gap: 24px;
+}
+
+#projects_part .title {
+  margin-bottom: 106px;
+  color: var(--white);
+}
+
+#projects_part .title h2 {
+  color: var(--white);
+}
+
+#projects_part .title p {
+  max-width: 620px;
+  font-size: 25px;
+  color: var(--white);
+}
+
+#projects_part .child {
+  overflow: hidden;
+  height:350px;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#projects_part .child img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#projects_part .child .text {
+  padding: 30px 42px;
+  text-align: center;
+}
+
+#projects_part .child .text h3 {
+  width: 258px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+#projects_part .child .text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: whitesmoke;
+}
+
+#projects_part .child .text .liveIcon i {
+  margin-right:10px;
+}
+
+/* ====================================================== */
+
+#contact_part {
+  padding: 50px 0 50px 0;
+  background-image: linear-gradient(to right, #4ca2cd, #67b26f);
+}
+
+#contact_part .title h2{
+  color: var(--white);
+}
+
+#contact_part .cardCon {
+  margin: 0 1px 0 0;
+  padding: 20px 5px;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#contact_part .cardConn {
+  margin: 0 1px 0 0;
+  padding: 20px 5px;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#contact_part .fontIcon i {
+  color: var(--white);
+  font-size: 25px;
+}
+
+#contact_part .text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--white);
+  margin: 0 0 0 10px;
+}
+
+/* ====================================================== */
+
+footer {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+}
+
+footer .footNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+footer .footNav ul li {
+  display: inline;
+  padding: 0 25px;
+}
+
+footer .footNav ul li a {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--black);
+}
+
+footer .copy_part{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.581);
+}
