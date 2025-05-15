@@ -50,20 +50,20 @@
 }
 
 .submittBtn {
-  margin-left: 175px;
+  margin-left: 160px;
   margin-top: 20px;
-  padding: 8px 12px;
-  color: var(--secondaryColor);
+  padding: 8px 20px;
+  color: var(--white);
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 1);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 6px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .container {
