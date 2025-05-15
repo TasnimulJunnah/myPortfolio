@@ -36,7 +36,6 @@
 }
 
 .customBtn:hover {
-  color: var(--white) !important;
   background: #67b26f; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -48,6 +47,23 @@
     #4ca2cd,
     #67b26f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.submittBtn {
+  margin-left: 175px;
+  margin-top: 20px;
+  padding: 8px 12px;
+  color: var(--secondaryColor);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .container {
@@ -237,6 +253,14 @@ p {
 
 #skill_part .row {
   row-gap: 24px;
+}
+
+#skill_part h2 {
+  background: -webkit-linear-gradient(#4ca2cd, #67b26f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: 800;
 }
 
 /* ====================================================== */
